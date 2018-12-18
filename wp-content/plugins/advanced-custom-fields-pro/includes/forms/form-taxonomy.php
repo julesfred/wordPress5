@@ -276,7 +276,7 @@ if( $this->view == 'add' ): ?>
 	acf.addAction('prepare', function(){
 		html = $fields.html();
 	}, 6);
-		
+	
 	// WP triggers click as primary action
 	$submit.on('click', function( e ){
 		

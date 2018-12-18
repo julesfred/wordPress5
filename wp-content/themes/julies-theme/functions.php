@@ -290,12 +290,21 @@ function my_acf_init() {
 			'description'		=> __('A custom hero block.'),
 			'render_callback'	=> 'my_acf_block_render_callback',
 			'category'			=> 'formatting',
-			'icon'				=> 'admin-comments',
+			'icon'				=> 'star-filled',
 			'keywords'			=> array( 'hero' ),
 		));
 	}
 }
 
+function my_acf_block_render_callback( $block ) {
+	
+	$slug = str_replace('acf/', '', $block['name']);
+	
+	// include a template part from within the "template-parts/block" folder
+	if( file_exists(STYLESHEETPATH . "/template-parts/block/content-{$slug}.php") ) {
+		include( STYLESHEETPATH . "/template-parts/block/content-{$slug}.php" );
+	}
+}
 
 
 /**

@@ -2,8 +2,8 @@
 /*
 Plugin Name: Advanced Custom Fields PRO
 Plugin URI: https://www.advancedcustomfields.com/
-Description: Customize WordPress with powerful, professional and intuitive fields.
-Version: 5.7.9
+Description: Customise WordPress with powerful, professional and intuitive fields.
+Version: 5.8.0-beta3
 Author: Elliot Condon
 Author URI: http://www.elliotcondon.com/
 Copyright: Elliot Condon
@@ -18,7 +18,7 @@ if( ! class_exists('ACF') ) :
 class ACF {
 	
 	/** @var string The plugin version number */
-	var $version = '5.7.9';
+	var $version = '5.8.0-beta3';
 	
 	/** @var array The plugin settings array */
 	var $settings = array();
@@ -142,12 +142,14 @@ class ACF {
 		
 		// core
 		acf_include('includes/assets.php');
+		acf_include('includes/blocks.php');
 		acf_include('includes/cache.php');
 		acf_include('includes/compatibility.php');
 		acf_include('includes/deprecated.php');
 		acf_include('includes/form.php');
 		acf_include('includes/json.php');
 		acf_include('includes/local.php');
+		acf_include('includes/local-meta.php');
 		acf_include('includes/loop.php');
 		acf_include('includes/media.php');
 		acf_include('includes/revisions.php');
@@ -247,11 +249,6 @@ class ACF {
 			acf_include('includes/wpml.php');
 		}
 		
-		// include gutenberg
-		if( defined('GUTENBERG_VERSION') ) {
-			acf_include('includes/forms/form-gutenberg.php');
-		}
-		
 		// fields
 		acf_include('includes/fields/class-acf-field-text.php');
 		acf_include('includes/fields/class-acf-field-textarea.php');
@@ -314,6 +311,7 @@ class ACF {
 		acf_include('includes/locations/class-acf-location-widget.php');
 		acf_include('includes/locations/class-acf-location-nav-menu.php');
 		acf_include('includes/locations/class-acf-location-nav-menu-item.php');
+		acf_include('includes/locations/class-acf-location-block.php');
 		do_action('acf/include_location_rules', $major);
 		
 		
