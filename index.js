@@ -5,7 +5,6 @@ var express = require('express');
 var ParseServer = require('parse-server').ParseServer;
 var path = require('path');
 
-
 var api = new ParseServer({
 	databaseURI: CONFIG.DATABASE_URI,
 	cloud: CONFIG.CLOUD_CODE,

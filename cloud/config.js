@@ -13,7 +13,6 @@ if(process.env.API_ENV == 'production') {
 	exports.APP_ID = "pGJG5N7QXLJc89RnbnHGRyTH7Uxy8WqS";
 	exports.MASTER_KEY = "Zvk5PnvPUnf8sfrm5e6VNBZ0cXBXEnQp";
 	exports.PRODUCTION = false;
-	
 
 	// different dev enviornments
 	if(process.env.API_ENV == 'development') {
@@ -26,4 +25,3 @@ if(process.env.API_ENV == 'production') {
 		}];
 	} 
 }
-
