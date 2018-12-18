@@ -95,6 +95,8 @@ body {
   margin: 0;
 }
 
+.container{width: 90%; max-width: 1300px; margin: 0 auto;}
+
 /**
  * Correct the font size and margin on `h1` elements within `section` and
  * `article` contexts in Chrome, Firefox, and Safari.
