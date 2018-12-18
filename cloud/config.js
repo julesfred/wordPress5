@@ -10,8 +10,8 @@ if(process.env.API_ENV == 'production') {
 } else {
 	// DEVELOPMENT
 	exports.APP_NAME = "happyhour";
-	exports.APP_ID = "wiLht9rLaco2KoVxrj0r6EBx7id094ud";
-	exports.MASTER_KEY = "A7OZhfe2uPrcFxWWfD87sjS0y4jszp03";
+	exports.APP_ID = "pGJG5N7QXLJc89RnbnHGRyTH7Uxy8WqS";
+	exports.MASTER_KEY = "Zvk5PnvPUnf8sfrm5e6VNBZ0cXBXEnQp";
 	exports.PRODUCTION = false;
 	
 
