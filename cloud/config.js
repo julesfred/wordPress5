@@ -9,7 +9,7 @@ if(process.env.API_ENV == 'production') {
 	
 } else {
 	// DEVELOPMENT
-	exports.APP_NAME = "DEV:Koosa";
+	exports.APP_NAME = "DEV:happyhour";
 	exports.APP_ID = "pGJG5N7QXLJc89RnbnHGRyTH7Uxy8WqS";
 	exports.MASTER_KEY = "Zvk5PnvPUnf8sfrm5e6VNBZ0cXBXEnQp";
 	exports.PRODUCTION = false;
